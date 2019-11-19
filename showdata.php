@@ -22,6 +22,7 @@
         <th>Password</th>
         <th>Hobbies</th>
         <th> datetime </th>
+        <th colspan="2"> Action </th>
         
       </tr>
     </thead>
@@ -34,6 +35,9 @@
               <td> <?php echo $value->users_password ?> </td>
                <td> <?php echo $value->users_hobbies ?> </td>
                 <td> <?php echo $value->datetime ?> </td>
+                <td>  <a href="delete?id=<?php  echo $value->users_id
+                ?>" class="btn btn-danger" >DELETE </a> </td>
+                <td> <a href="edit?id=<?php echo $value->users_id ?>" class="btn btn-info">EDIT</a> </td>
           </tr>   
 
    <?php  }  ?>
